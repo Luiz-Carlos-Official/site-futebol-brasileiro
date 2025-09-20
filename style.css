@@ -1,0 +1,94 @@
+@media (min-width: 1025px) {
+    body {
+        background: linear-gradient(to right, #009739, #ffdf00); /* Verde → Amarelo */
+        padding: 40px 80px;
+    }
+
+    /* ===== Cabeçalho ===== */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 40px;
+        background: #002776;
+        border-radius: 12px;
+        margin-bottom: 40px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    #titulo-principal {
+        font-size: 2.4rem;
+        color: #ffdf00;
+        font-weight: bold;
+        text-shadow: 3px 3px 8px rgba(0,0,0,0.7);
+    }
+
+    /* ===== Menu ===== */
+    #menu {
+        display: flex;
+        gap: 35px;
+    }
+
+    #menu a {
+        color: #fff;
+        font-size: 1.6rem;
+        transition: 0.3s ease;
+    }
+
+    #menu a:hover {
+        color: #ffdf00;
+        transform: scale(1.15);
+    }
+
+    /* ===== Títulos ===== */
+    .titulo {
+        font-size: 2rem;
+        text-align: left;
+        color: #002776;
+        background: #ffdf00;
+        padding: 12px 20px;
+        border-radius: 10px;
+        margin: 30px 0 15px 0;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+    }
+
+    /* ===== Layout principal ===== */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        gap: 40px;
+    }
+
+    .img img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 14px;
+        box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .img img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 10px 22px rgba(0,0,0,0.4);
+    }
+
+    .texto {
+        background: rgba(255, 255, 255, 0.15);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: justify;
+        font-size: 1.15rem;
+        line-height: 2;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    /* ===== Ajuste dos blocos ===== */
+    .titulo {
+        grid-column: span 2;
+    }
+
+    .img, .texto {
+        grid-column: span 1;
+    }
+}

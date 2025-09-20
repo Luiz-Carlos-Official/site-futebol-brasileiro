@@ -1,0 +1,90 @@
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        background: linear-gradient(to right, #009739, #ffdf00); /* Verde → Amarelo */
+        padding: 20px;
+    }
+
+    /* ===== Cabeçalho ===== */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background: #002776;
+        border-radius: 10px;
+        margin-bottom: 25px;
+    }
+
+    #titulo-principal {
+        font-size: 2rem;
+        color: #ffdf00;
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+
+    /* ===== Menu ===== */
+    #menu {
+        display: flex;
+        gap: 25px;
+    }
+
+    #menu a {
+        color: #fff;
+        font-size: 1.4rem;
+        transition: 0.3s ease;
+    }
+
+    #menu a:hover {
+        color: #ffdf00;
+        transform: scale(1.15);
+    }
+
+    /* ===== Títulos ===== */
+    .titulo {
+        font-size: 1.6rem;
+        text-align: left;
+        color: #002776;
+        background: #ffdf00;
+        padding: 10px 15px;
+        border-radius: 8px;
+        margin: 20px 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    }
+
+    /* ===== Layout principal ===== */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .img img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+        transition: transform 0.3s;
+    }
+
+    .img img:hover {
+        transform: scale(1.02);
+    }
+
+    .texto {
+        background: rgba(255, 255, 255, 0.15);
+        padding: 15px;
+        border-radius: 8px;
+        text-align: justify;
+        font-size: 1.05rem;
+        line-height: 1.8;
+    }
+
+    /* Para dar mais destaque ao conteúdo */
+    section {
+        grid-column: span 2;
+    }
+
+    /* Mas títulos + textos + imagens principais ficam em colunas */
+    .titulo, .img, .texto {
+        grid-column: span 1;
+    }
+}

@@ -1,0 +1,94 @@
+@media (max-width: 768px) {
+    /* ===== Reset ===== */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+    }
+
+    body {
+        background: linear-gradient(to bottom, #009739, #ffdf00); /* Verde → Amarelo */
+        color: #fff;
+        line-height: 1.6;
+        padding: 10px;
+    }
+
+    /* ===== Cabeçalho ===== */
+    header {
+        text-align: center;
+        padding: 15px;
+        background: #002776; /* Azul da bandeira */
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    #titulo-principal {
+        font-size: 1.6rem;
+        color: #ffdf00; /* Amarelo */
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+
+    /* ===== Menu ===== */
+    #menu {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    #menu a {
+        color: #fff;
+        font-size: 1.2rem;
+        transition: 0.3s;
+    }
+
+    #menu a:hover {
+        color: #ffdf00;
+        transform: scale(1.2);
+    }
+
+    /* ===== Títulos ===== */
+    .titulo {
+        font-size: 1.4rem;
+        text-align: center;
+        color: #002776; /* Azul */
+        background: #ffdf00;
+        padding: 8px;
+        margin: 15px 0;
+        border-radius: 6px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    /* ===== Imagens ===== */
+    .img {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .img img {
+        width: 100%;
+        max-width: 350px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    /* ===== Texto ===== */
+    .texto {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 12px;
+        border-radius: 6px;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    .texto p {
+        font-size: 1rem;
+        color: #fff;
+    }
+
+    /* ===== Ajuste para links ou botões futuros ===== */
+    a, button {
+        cursor: pointer;
+    }
+}
